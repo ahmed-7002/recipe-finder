@@ -714,10 +714,11 @@ const fetchSpoonacularRecipes = async () => {
       <header className="relative z-10 pt-8 pb-6 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-6xl font-bold text-center mb-2 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-            Complete Recipe Database
+            Recipe Scout
           </h1>
           <p className="text-gray-400 text-center text-lg mb-2">
-            All available recipes from TheMealDB & Spoonacular with smart features
+           Find the perfect recipe and follow along with built-in YouTube tutorials.
+Instructions and videos, all in one place.
           </p>
           <div className="flex justify-center space-x-6 text-sm text-gray-500">
             <span>{recipes.length} total recipes</span>
