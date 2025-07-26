@@ -1134,26 +1134,25 @@ Instructions and videos, all in one place.
                       </span>
                     </div>
                     
-                    {/* Enhanced Tags */}
-                    <div className="absolute top-3 right-3 flex flex-col gap-1">
-                      {recipeTags.slice(0, 2).map((tag, index) => (
-                        <span
-                          key={index}
-                          className={`px-2 py-1 text-xs font-medium rounded-lg backdrop-blur-sm ${
-                            tag === 'High Protein' ? 'bg-red-500/90 text-white' :
-                            tag === 'Vegetarian' ? 'bg-green-500/90 text-white' :
-                            tag === 'Vegan' ? 'bg-green-600/90 text-white' :
-                            tag === 'Low Carb' ? 'bg-blue-500/90 text-white' :
-                            tag === 'Low Calorie' ? 'bg-cyan-500/90 text-white' :
-                            tag === 'Gluten-Free' || tag === 'Gluten Free' ? 'bg-purple-500/90 text-white' :
-                            tag === 'Dairy-Free' || tag === 'Dairy Free' ? 'bg-orange-500/90 text-white' :
-                            'bg-amber-500/90 text-black'
-                          }`}
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="absolute top-3 right-3 flex flex-row flex-wrap gap-1 max-w-[70%]">
+  {recipeTags.slice(0, 3).map((tag, index) => (
+    <span
+      key={index}
+      className={`px-2 py-1 text-xs font-medium rounded-lg backdrop-blur-sm ${
+        tag === 'High Protein' ? 'bg-red-500/90 text-white' :
+        tag === 'Vegetarian' ? 'bg-green-500/90 text-white' :
+        tag === 'Vegan' ? 'bg-green-600/90 text-white' :
+        tag === 'Low Carb' ? 'bg-blue-500/90 text-white' :
+        tag === 'Low Calorie' ? 'bg-cyan-500/90 text-white' :
+        tag === 'Gluten-Free' || tag === 'Gluten Free' ? 'bg-purple-500/90 text-white' :
+        tag === 'Dairy-Free' || tag === 'Dairy Free' ? 'bg-orange-500/90 text-white' :
+        'bg-amber-500/90 text-black'
+      }`}
+    >
+      {tag}
+    </span>
+  ))}
+</div>
 
                     {/* Nutrition Quick Info */}
                     {nutrition && (
